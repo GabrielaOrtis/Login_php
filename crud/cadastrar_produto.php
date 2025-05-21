@@ -2,7 +2,7 @@
 session_start();
 $mensagem = "";
 
-// Conexão com o banco (ajuste com suas configs)
+// Conexão com o banco 
 $conexao = new mysqli("localhost", "root", "", "crud_teste");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
