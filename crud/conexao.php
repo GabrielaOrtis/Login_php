@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$dbname = 'crud_teste'; // nome do banco que você criou no phpMyAdmin
+$dbname = 'crud_teste'; 
 $user = 'root';
-$password = ''; // senha vazia no Laragon por padrão
+$password = ''; 
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
