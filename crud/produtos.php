@@ -8,7 +8,7 @@ if (!isset($_SESSION['usuario'])) {
     exit;
 }
 
-// Aqui faço a busca de todos os produtos no banco de dados
+//busca de todos os produtos no banco de dados
 $stmt = $conn->prepare("SELECT * FROM produtos");
 $stmt->execute();
 $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC); // Recebo todos os produtos em forma de lista
@@ -125,7 +125,7 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC); // Recebo todos os produtos em fo
                 <th>Ações</th>
             </tr>
 
-            <!-- Aqui estou mostrando cada produto em uma linha da tabela -->
+            <!-- cada produto em uma linha da tabela -->
             <?php foreach ($produtos as $p): ?>
             <tr>
                 <td><?= $p['id'] ?></td>
